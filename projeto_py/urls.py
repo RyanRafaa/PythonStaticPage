@@ -16,9 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import redirect
+from minhas_pages.views import home
 
 urlpatterns = [
     path('admin/',  admin.site.urls),
+    path('', lambda request: redirect('home'), name='index'),  # Redireciona para a view 'home_view' em 'minhas_pages'
+    path('home/', home, name='home'),
     path('', include ('minhas_pages.urls')),
 ]
 

@@ -2,26 +2,85 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>My Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href="{% static 'css/stylesHome.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to my page</h1>
-    </header>
-    
-    <main>
-        <p>This is the main content of my page.</p>
-        <a href="{% url 'pageOne' %}">
-            <button>Ir para Outra Página</button>
-        </a>
-    </main>
-    
-    <footer>
-        <p>&copy; 2021 My Page</p>
-    </footer>
+    <div class="bg"></div>
+
+    <div class="star-field">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+        <header>
+            
+        </header>
+
+        <main>
+            <h1>Explore novos mundos e vá além das estrelas.</h1>
+            
+            <a href="{% url 'pageOne' %}" class="button type--B">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">Explorar</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+              </a>
+            <div>
+                <div class="portfolio">
+                    <h2 class="title">Explore Mundos</h2>
+                    <div class="card">
+                      <div class="content">
+                        <span class="title">Terra</span>
+                        <span class="category">Vivo / Diverso / Habitado.</span>
+                      </div>
+                      <div class="image">
+                        <img src="https://img.freepik.com/fotos-gratis/renderizacao-3d-do-planeta-terra_23-2150498436.jpg" alt="" />
+                      </div>
+                    </div>
+                  
+                    <div class="card">
+                      <div class="content">
+                        <span class="title">Marte</span>
+                        <span class="category">Árido / Vermelho / Explorado. </span>
+                      </div>
+                      <div class="image">
+                        <img src="https://img.freepik.com/fotos-premium/ilustracao-3d-planeta-marte-isolado-em-elementos-de-imagem-do-ceu-noturno-preto-fornecidos-pela-nasa_510958-640.jpg" alt="" />
+                      </div>
+                    </div>
+                  
+                    <div class="card">
+                      <div class="content">
+                        <span class="title">Saturno</span>
+                        <span class="category">Anéis / Gasoso / Majestoso.</span>
+                      </div>
+                      <div class="image">
+                        <img src="https://img.freepik.com/fotos-premium/saturno-com-fundo-branco-ultra-hd-de-alta-qualidade_889056-9598.jpg" alt="" />
+                      </div>
+                    </div>
+                    
+                    
+                      
+                   
+                  
+                  </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 ADS III</p>
+        </footer>
 </body>
+
 </html>

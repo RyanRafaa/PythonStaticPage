@@ -10,3 +10,6 @@ def screenOne(request):
 
 def screenTwo(request):
     return render(request, 'screenTwo.html')
+
+def screenThree(request):
+    return render(request, 'screenThree.html')
